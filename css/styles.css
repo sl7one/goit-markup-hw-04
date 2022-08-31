@@ -262,18 +262,42 @@ header .container{
 }
 
 
+
 .social-networks a::before{
     content: "";
     display: inline-block;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #2196F3;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-left: 10px;
+    /*border: 1px solid black;*/
+}
+
+.social-networks a:hover::before,
+.social-networks a:focus::before{
+    background-color: var(--acent);
 }
 
 .social-networks a:first-child::before{
     margin-left: 0px;
+}
+
+.icon-inst::before{
+    background-image: url('../images/icons/instagram\ 2.svg');
+}
+
+.icon-twet::before{
+    background-image: url('../images/icons/twitter\ 1.svg');
+}
+
+.icon-face::before{
+    background-image: url('../images/icons/facebook\ 1.svg');
+}
+
+.icon-link::before{
+    background-image: url('../images/icons/linkedin\ 1.svg');
 }
 
 .card-container{
