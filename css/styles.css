@@ -5,6 +5,7 @@
     --primiry:#212121;
     --secondary: #757575;
     --acent:#2196F3;
+    --icon-bgc:#F5F4FA;
    
 }
 
@@ -30,6 +31,7 @@ h1, h2, h3, p, ul, span{
     padding: 0px;
 }
 
+/*----------------------------------------------------------*/
 
 .logo{
     font-family: raleway, sans-serif;
@@ -74,6 +76,25 @@ h1, h2, h3, p, ul, span{
 .nav-menu li:not(:first-child),
 .nav-contacts li:not(:first-child){
     margin-left: 50px;
+}
+
+.nav-contacts a::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    color: var(--secondary);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.icons-mail::before{
+    background-image: url('../images/icons/mail.svg');
+}
+
+.icons-mobile::before {
+    background-image: url('../images/icons/mobile.svg');
 }
 
 .nav-menu .font-style{
@@ -135,6 +156,11 @@ header .container{
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 1600px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/Img.jpg');
+   
+
 }
 .effective-solutions .header-style{
     text-transform: uppercase;
@@ -171,12 +197,41 @@ header .container{
     color: var(--secondary);
 }
 
+.benefits li::before{
+    content: "";
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--icon-bgc);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+
+}
+
+.icon-radar::before{
+    background-image: url("../images/icons/radar.svg");
+}
+
+.icon-clock::before{
+    background-image: url('../images/icons/clock.svg');
+}
+
+.icon-diagram::before{
+    background-image: url('../images/icons/diagram.svg');
+}
+
+.icon-astronaut::before{
+    background-image: url('../images/icons/astronaut.svg');
+}
+
 .command{
     display: flex;
     text-align: center;
 }
 
-.command li:not(:first-child){
+.command > li:not(:first-child){
     margin-left: 30px;
 }
 
@@ -193,6 +248,38 @@ header .container{
     
 }
 
+.social-networks{
+    display: flex;
+    justify-content: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+}
+
+.social-networks a{
+    display: inline-block;
+}
+
+
+.social-networks a::before{
+    content: "";
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #2196F3;
+    margin-left: 10px;
+}
+
+.social-networks a:first-child::before{
+    margin-left: 0px;
+}
+
+.card-container{
+    width: 270px;
+    border: 1px solid black;
+}
 
 .footer .container{
     padding-top: 60px;
