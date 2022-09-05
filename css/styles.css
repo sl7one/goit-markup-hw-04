@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: white;
   color: var(--primiry);
   font-family: roboto, sans-serif;
 }
@@ -122,7 +122,6 @@ header .container {
   line-height: calc(16 / 14);
   color: var(--primiry);
   letter-spacing: 0.03em;
-  margin-top: 10px;
   padding: 0px 24;
 }
 
@@ -233,7 +232,7 @@ header .container {
   margin-left: 30px;
 }
 
-.command .item-container {
+.item-container {
   padding-top: 30px;
   padding-bottom: 16px;
   padding-left: 15px;
@@ -390,10 +389,20 @@ header .container {
 
 .items {
   display: inline-block;
-  border: 1px solid #eeeeee;
-  background-color: #ffffff;
-  padding-bottom: 20px;
 }
+
+.item-container {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #ffffff;
+}
+
+.items .item-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .items:hover,
 .items:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -417,11 +426,6 @@ header .container {
   margin-top: 0px;
 }
 
-.works .font-style,
-.works .headlines-style {
-  padding: 0px 24px;
-}
-
 .works-img {
   display: flex;
 }
@@ -430,6 +434,15 @@ header .container {
   margin-left: 30px;
 }
 
+.works .font-style,
+.works .headlines-style {
+  padding: 0px 24px;
+}
+
+.section.work {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .clients-list {
   display: flex;
   align-items: center;
