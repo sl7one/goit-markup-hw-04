@@ -122,7 +122,6 @@ header .container {
   line-height: calc(16 / 14);
   color: var(--primiry);
   letter-spacing: 0.03em;
-  padding: 0px 24;
 }
 
 .header-style {
@@ -493,7 +492,7 @@ header .container {
 }
 
 .footer .adds {
-  margin-top: 15px;
+  margin-top: 30px;
   margin-left: 70px;
 }
 
@@ -547,4 +546,10 @@ header .container {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.list-item {
+  width: 20px;
+  height: 20px;
+  background-color: red;
 }
